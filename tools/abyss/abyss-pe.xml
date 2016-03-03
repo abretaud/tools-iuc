@@ -1,3 +1,5 @@
+POUTRELLE
+
 <tool id="abyss-pe" name="ABySS" version="1.9.0.0">
     <description>de novo sequence assembler</description>
     <macros>
