@@ -120,6 +120,7 @@ install:
 script:
   - set -e
   - |
+    while sleep 9m; do echo "[TRAVIS] Still running..."; done &
     if [ -s changed_tools_chunk.list ]; then
         df -h
         planemo test --conda_dependency_resolution --conda_auto_install --conda_debug --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" $(cat changed_tools_chunk.list)
