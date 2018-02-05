@@ -73,6 +73,8 @@ before_install:
   - export GALAXY_RELEASE=release_17.09
   - export PLANEMO_CONDA_PREFIX="$HOME/conda"
   - unset JAVA_HOME
+  - df -h
+  - du -sh /*
 
 install:
   - pip install planemo
@@ -116,9 +118,11 @@ script:
   - set -e
   - |
     if [ -s changed_tools_chunk.list ]; then
-        planemo test --conda_dependency_resolution --conda_auto_install --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" $(cat changed_tools_chunk.list)
+        df -h
+        planemo test --conda_dependency_resolution --conda_auto_install --conda_debug --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" $(cat changed_tools_chunk.list)
     elif [ -s changed_repositories_chunk.list ]; then
         while read -r DIR; do
-            planemo test --conda_dependency_resolution --conda_auto_install --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" "$DIR"
+            df -h
+            planemo test --conda_dependency_resolution --conda_auto_install --conda_debug --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" "$DIR"
         done < changed_repositories_chunk.list
     fi
