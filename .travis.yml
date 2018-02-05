@@ -74,7 +74,10 @@ before_install:
   - export PLANEMO_CONDA_PREFIX="$HOME/conda"
   - unset JAVA_HOME
   - df -h
-  - du -sh /*
+  - rm -rf /home/travis/perl5/ /home/travis/.phpenv /home/travis/gopath /home/travis/otp /home/travis/.gimme/ /home/travis/.rvm /home/travis/.nvm
+  - df -h
+  - sudo rm -rf /usr/local/clang*
+  - df -h
 
 install:
   - pip install planemo
