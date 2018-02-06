@@ -73,6 +73,11 @@ before_install:
   - export GALAXY_RELEASE=release_17.09
   - export PLANEMO_CONDA_PREFIX="$HOME/conda"
   - unset JAVA_HOME
+  - df -h
+  - rm -rf /home/travis/perl5/ /home/travis/.phpenv /home/travis/gopath /home/travis/otp /home/travis/.gimme/ /home/travis/.rvm /home/travis/.nvm
+  - df -h
+  - sudo rm -rf /usr/local/clang*
+  - df -h
 
 install:
   - pip install planemo
@@ -115,10 +120,22 @@ install:
 script:
   - set -e
   - |
+    while sleep 9m; do echo "[TRAVIS] Still running..."; done &
+
+    echo "#!/bin/bash" | sudo tee --append /usr/local/bin/condav
+    echo 'cmd=$1' | sudo tee --append /usr/local/bin/condav
+    echo 'shift' | sudo tee --append /usr/local/bin/condav
+    echo 'df -h' | sudo tee --append /usr/local/bin/condav
+    echo 'conda $cmd -v $@' | sudo tee --append /usr/local/bin/condav
+    sudo chmod a+x /usr/local/bin/condav
+    cat /usr/local/bin/condav
+    ## /home/travis/conda/bin/conda --debug create -y -v --override-channels --channel iuc --channel bioconda --channel conda-forge --channel defaults --name __antismash@4.0.2 antismash=4.0.2
     if [ -s changed_tools_chunk.list ]; then
-        planemo test --conda_dependency_resolution --conda_auto_install --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" $(cat changed_tools_chunk.list)
+        df -h
+        planemo test --conda_dependency_resolution --conda_auto_install --conda_exec /usr/local/bin/condav --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" $(cat changed_tools_chunk.list)
     elif [ -s changed_repositories_chunk.list ]; then
         while read -r DIR; do
-            planemo test --conda_dependency_resolution --conda_auto_install --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" "$DIR"
+            df -h
+            planemo test --conda_dependency_resolution --conda_auto_install --conda_debug --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" "$DIR"
         done < changed_repositories_chunk.list
     fi
