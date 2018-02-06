@@ -125,6 +125,7 @@ script:
     echo "#!/bin/bash" | sudo tee --append /usr/local/bin/condav
     echo 'cmd=$1' | sudo tee --append /usr/local/bin/condav
     echo 'shift' | sudo tee --append /usr/local/bin/condav
+    echo 'df -h' | sudo tee --append /usr/local/bin/condav
     echo 'conda $cmd -v $@' | sudo tee --append /usr/local/bin/condav
     sudo chmod a+x /usr/local/bin/condav
     cat /usr/local/bin/condav
