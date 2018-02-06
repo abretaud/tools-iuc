@@ -121,10 +121,10 @@ script:
   - set -e
   - |
     while sleep 9m; do echo "[TRAVIS] Still running..."; done &
-    /home/travis/conda/bin/conda --debug create -y -v --override-channels --channel iuc --channel bioconda --channel conda-forge --channel defaults --name __antismash@4.0.2 antismash=4.0.2
+    ## /home/travis/conda/bin/conda --debug create -y -v --override-channels --channel iuc --channel bioconda --channel conda-forge --channel defaults --name __antismash@4.0.2 antismash=4.0.2
     if [ -s changed_tools_chunk.list ]; then
         df -h
-        planemo test --conda_dependency_resolution --conda_auto_install --conda_debug --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" $(cat changed_tools_chunk.list)
+        planemo test --conda_dependency_resolution --conda_auto_install --conda_debug --conda_prefix "-v" --conda_channels iuc,bioconda,conda-forge,defaults --galaxy_branch "$GALAXY_RELEASE" --galaxy_source "$GALAXY_REPO" $(cat changed_tools_chunk.list)
     elif [ -s changed_repositories_chunk.list ]; then
         while read -r DIR; do
             df -h
