@@ -124,6 +124,7 @@ script:
 
     echo "#!/bin/bash" | sudo tee --append /usr/local/bin/condav
     echo "conda -v $@" | sudo tee --append /usr/local/bin/condav
+    sudo chmod a+x /usr/local/bin/condav
     ## /home/travis/conda/bin/conda --debug create -y -v --override-channels --channel iuc --channel bioconda --channel conda-forge --channel defaults --name __antismash@4.0.2 antismash=4.0.2
     if [ -s changed_tools_chunk.list ]; then
         df -h
