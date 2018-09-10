@@ -1,4 +1,4 @@
-<tool id="EMBOSS: showfeat85" name="showfeat" version="@VERSION@.1">
+<tool id="emboss_showfeat" name="showfeat" version="@VERSION@">
   <!-- tool gives memory errors -->
   <description>Show features of a sequence</description>
   <macros>

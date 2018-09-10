@@ -1,4 +1,4 @@
-<tool id="EMBOSS: wordmatch110" name="wordmatch" version="@VERSION@.1">
+<tool id="emboss_wordmatch" name="wordmatch" version="@VERSION@">
   <description>Finds all exact matches of a given size between 2 sequences</description>
   <macros>
     <import>macros.xml</import>

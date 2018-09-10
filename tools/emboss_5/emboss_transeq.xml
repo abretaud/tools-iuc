@@ -1,4 +1,4 @@
-<tool id="EMBOSS: transeq101" name="transeq" version="@VERSION@">
+<tool id="emboss_transeq" name="transeq" version="@VERSION@">
     <description>Translate nucleic acid sequences</description>
     <macros>
         <import>macros.xml</import>

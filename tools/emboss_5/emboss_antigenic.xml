@@ -1,4 +1,4 @@
-<tool id="EMBOSS: antigenic1" name="antigenic" version="@VERSION@.1">
+<tool id="emboss_antigenic" name="antigenic" version="@VERSION@">
   <description>Predicts potentially antigenic regions of a protein sequence, using the method of Kolaskar and Tongaonkar.</description>
   <macros>
     <import>macros.xml</import>

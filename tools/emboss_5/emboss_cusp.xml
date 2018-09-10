@@ -1,4 +1,4 @@
-<tool id="EMBOSS: cusp17" name="cusp" version="@VERSION@">
+<tool id="emboss_cusp" name="cusp" version="@VERSION@">
   <description>Create a codon usage table</description>
   <macros>
     <import>macros.xml</import>

@@ -1,4 +1,4 @@
-<tool id="EMBOSS: palindrome65" name="palindrome" version="@VERSION@.1">
+<tool id="emboss_palindrome" name="palindrome" version="@VERSION@">
   <description>Looks for inverted repeats in a nucleotide sequence</description>
   <macros>
     <import>macros.xml</import>

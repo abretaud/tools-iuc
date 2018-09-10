@@ -1,4 +1,4 @@
-<tool id="EMBOSS: lindna48" name="lindna" version="@VERSION@.1">
+<tool id="emboss_lindna" name="lindna" version="@VERSION@">
   <!-- tool produces memory error in ajmem.c -->
   <description>Draws linear maps of DNA constructs</description>
   <macros>

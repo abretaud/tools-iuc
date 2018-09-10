@@ -1,4 +1,4 @@
-<tool id="EMBOSS: patmatdb67" name="patmatdb" version="@VERSION@">
+<tool id="emboss_patmatdb" name="patmatdb" version="@VERSION@">
   <description>Search a protein sequence with a motif</description>
   <macros>
     <import>macros.xml</import>

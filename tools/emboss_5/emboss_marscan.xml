@@ -1,4 +1,4 @@
-<tool id="EMBOSS: marscan49" name="marscan" version="@VERSION@">
+<tool id="emboss_marscan" name="marscan" version="@VERSION@">
   <description>Finds MAR/SAR sites in nucleic sequences</description>
   <macros>
     <import>macros.xml</import>

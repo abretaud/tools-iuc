@@ -1,4 +1,4 @@
-<tool id="EMBOSS: einverted28" name="einverted" version="@VERSION@.1">
+<tool id="emboss_einverted" name="einverted" version="@VERSION@">
   <description>Finds DNA inverted repeats</description>
   <macros>
     <import>macros.xml</import>

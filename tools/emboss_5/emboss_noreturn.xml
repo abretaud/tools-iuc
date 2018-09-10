@@ -1,4 +1,4 @@
-<tool id="EMBOSS: noreturn60" name="noreturn" version="@VERSION@">
+<tool id="emboss_noreturn" name="noreturn" version="@VERSION@">
   <description>Removes carriage return from ASCII files</description>
   <macros>
     <import>macros.xml</import>

@@ -1,4 +1,4 @@
-<tool id="EMBOSS: pepnet70" name="pepnet" version="@VERSION@">
+<tool id="emboss_pepnet" name="pepnet" version="@VERSION@">
   <!-- graphical output file with path information -->
   <description>Displays proteins as a helical net</description>
   <macros>

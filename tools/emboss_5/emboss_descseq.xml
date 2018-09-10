@@ -1,4 +1,4 @@
-<tool id="EMBOSS: descseq21" name="descseq" version="@VERSION@">
+<tool id="emboss_descseq" name="descseq" version="@VERSION@">
   <description>Alter the name or description of a sequence</description>
   <macros>
     <import>macros.xml</import>

@@ -1,4 +1,4 @@
-<tool id="EMBOSS: chips10" name="chips" version="@VERSION@">
+<tool id="emboss_chips" name="chips" version="@VERSION@">
   <description>Codon usage statistics</description>
   <macros>
     <import>macros.xml</import>

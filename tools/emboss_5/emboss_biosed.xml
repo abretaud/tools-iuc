@@ -1,4 +1,4 @@
-<tool id="EMBOSS: biosed4" name="biosed" version="@VERSION@">
+<tool id="emboss_biosed" name="biosed" version="@VERSION@">
   <description>Replace or delete sequence sections</description>
   <macros>
     <import>macros.xml</import>

@@ -1,11 +1,11 @@
-<tool id="EMBOSS: helixturnhelix43" name="helixturnhelix" version="@VERSION@.1">
+<tool id="emboss_helixturnhelix" name="helixturnhelix" version="@VERSION@">
   <description>Report nucleic acid binding motifs</description>
   <macros>
     <import>macros.xml</import>
   </macros>
   <expand macro="requirements" />
   <code file="emboss_format_corrector.py" />
-  <command>helixturnhelix -sequence '$input1' -outfile '$out_file1' -mean $mean -sd $sd -minsd $minsd -eightyseven $eightyseven -rformat2 $out_format1 -auto</command>
+  <command detect_errors="aggressive">helixturnhelix -sequence '$input1' -outfile '$out_file1' -mean $mean -sdvalue $sd -minsd $minsd -eightyseven $eightyseven -rformat2 $out_format1 -auto</command>
   <inputs>
     <param name="input1" type="data" format="data" label="Sequences" />
     <param name="mean" type="float" value="238.71" label="Mean value" />

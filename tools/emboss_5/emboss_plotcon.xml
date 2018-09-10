@@ -1,4 +1,4 @@
-<tool id="EMBOSS: plotcon75" name="plotcon" version="@VERSION@.1">
+<tool id="emboss_plotcon" name="plotcon" version="@VERSION@">
   <!-- produces png file -->
   <description>Plot quality of conservation of a sequence alignment</description>
   <macros>

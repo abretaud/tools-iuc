@@ -1,4 +1,4 @@
-<tool id="EMBOSS: tmap99" name="tmap" version="@VERSION@">
+<tool id="emboss_tmap" name="tmap" version="@VERSION@">
   <description>Displays membrane spanning regions</description>
   <macros>
     <import>macros.xml</import>

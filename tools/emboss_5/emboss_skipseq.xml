@@ -1,4 +1,4 @@
-<tool id="EMBOSS: skipseq91" name="skipseq" version="@VERSION@.1">
+<tool id="emboss_skipseq" name="skipseq" version="@VERSION@">
   <description>Reads and writes sequences, skipping first few</description>
   <macros>
     <import>macros.xml</import>

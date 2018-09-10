@@ -1,4 +1,4 @@
-<tool id="EMBOSS: newcpgreport57" name="newcpgreport" version="@VERSION@.1">
+<tool id="emboss_newcpgreport" name="newcpgreport" version="@VERSION@">
   <description>Report CpG rich areas</description>
   <macros>
     <import>macros.xml</import>

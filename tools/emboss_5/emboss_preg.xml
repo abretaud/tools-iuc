@@ -1,4 +1,4 @@
-<tool id="EMBOSS: preg78" name="preg" version="@VERSION@">
+<tool id="emboss_preg" name="preg" version="@VERSION@">
   <description>Regular expression search of a protein sequence</description>
   <macros>
     <import>macros.xml</import>

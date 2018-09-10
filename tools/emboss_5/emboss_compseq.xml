@@ -1,4 +1,4 @@
-<tool id="EMBOSS: compseq14" name="compseq" version="@VERSION@.1">
+<tool id="emboss_compseq" name="compseq" version="@VERSION@">
   <description>Count composition of dimer/trimer/etc words in a sequence</description>
   <macros>
     <import>macros.xml</import>

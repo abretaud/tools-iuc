@@ -1,4 +1,4 @@
-<tool id="EMBOSS: pepwindow73" name="pepwindow" version="@VERSION@.1">
+<tool id="emboss_pepwindow" name="pepwindow" version="@VERSION@">
   <!-- produces png file -->
   <description>Displays protein hydropathy</description>
   <macros>

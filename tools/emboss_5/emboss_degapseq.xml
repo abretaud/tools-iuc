@@ -1,4 +1,4 @@
-<tool id="EMBOSS: degapseq20" name="degapseq" version="@VERSION@">
+<tool id="emboss_degapseq" name="degapseq" version="@VERSION@">
   <description>Removes gap characters from sequences</description>
   <macros>
     <import>macros.xml</import>

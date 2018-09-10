@@ -1,4 +1,4 @@
-<tool id="EMBOSS: dottup26" name="dottup" version="@VERSION@.1">
+<tool id="emboss_dottup" name="dottup" version="@VERSION@">
   <description>Displays a wordmatch dotplot of two sequences</description>
   <macros>
     <import>macros.xml</import>

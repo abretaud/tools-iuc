@@ -1,4 +1,4 @@
-<tool id="EMBOSS: trimseq103" name="trimseq" version="@VERSION@.1">
+<tool id="emboss_trimseq" name="trimseq" version="@VERSION@">
   <description>Trim ambiguous bits off the ends of sequences</description>
   <macros>
     <import>macros.xml</import>

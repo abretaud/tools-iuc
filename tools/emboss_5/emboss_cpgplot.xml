@@ -1,4 +1,4 @@
-<tool id="EMBOSS: cpgplot15" name="cpgplot" version="@VERSION@">
+<tool id="emboss_cpgplot" name="cpgplot" version="@VERSION@">
   <description>Plot CpG rich areas</description>
   <macros>
     <import>macros.xml</import>

@@ -1,4 +1,4 @@
-<tool id="EMBOSS: banana3" name="banana" version="@VERSION@">
+<tool id="emboss_banana" name="banana" version="@VERSION@">
   <description>Bending and curvature plot in B-DNA</description>
   <macros>
     <import>macros.xml</import>

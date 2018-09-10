@@ -1,4 +1,4 @@
-<tool id="EMBOSS: freak36" name="freak" version="@VERSION@.1">
+<tool id="emboss_freak" name="freak" version="@VERSION@">
   <description>Residue/base frequency table or plot</description>
   <macros>
     <import>macros.xml</import>

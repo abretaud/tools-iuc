@@ -1,11 +1,11 @@
-<tool id="EMBOSS: est2genome32" name="est2genome" version="@VERSION@.1">
+<tool id="emboss_est2genome" name="est2genome" version="@VERSION@">
   <description>Align EST and genomic DNA sequences</description>
   <macros>
     <import>macros.xml</import>
   </macros>
   <expand macro="requirements" />
   <command>est2genome -estsequence '$input1' -genomesequence '$input2' -outfile '$out_file1' -match $match -mismatch $mismatch -gappenalty $gappenalty -intronpenalty $intronpenalty -splicepenalty
-  $splicepenalty -minscore $minscore -reverse $reverse -splice $splice -mode $mode -best $best -shuffle $shuffle -seed $seed -align $align -width $width -auto</command>
+  $splicepenalty -minscore $minscore -reverse $reverse $splice -mode $mode -best $best -shuffle $shuffle -seed $seed -align $align -width $width -auto</command>
   <inputs>
     <param name="input1" type="data" format="fasta" label="EST sequence(s)" />
     <param name="input2" type="data" format="data" label="Genomic sequence" />
@@ -19,10 +19,7 @@
       <option value="no">No</option>
       <option value="yes">Yes</option>
     </param>
-    <param name="splice" type="select" label="Use donor and acceptor splice sites">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </param>
+    <param name="splice" type="boolean" truevalue="-usesplice" falsevalue="-nousesplice" label="Use donor and acceptor splice sites" />
     <param name="mode" type="select" label="Comparison mode">
       <option value="both">Both strands</option>
       <option value="forward">Forward strand only</option>

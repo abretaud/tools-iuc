@@ -1,6 +1,37 @@
-PEPCOIL of Sequence
-   using a window of 28 residues
+########################################
+# Program: pepcoil
+# Rundate: Fri  7 Sep 2018 17:37:25
+# Commandline: pepcoil
+#    -sequence /tmp/tmpB5IAzp/files/000/dataset_94.dat
+#    -outfile /tmp/tmpB5IAzp/files/000/dataset_95.dat
+#    -window 28
+#    -coil yes
+#    -frame yes
+#    -other yes
+#    -auto
+# Report_format: motif
+# Report_file: /tmp/tmpB5IAzp/files/000/dataset_95.dat
+########################################
+
+#=======================================
+#
+# Sequence: Sequence     from: 1   to: 561
+# HitCount: 1
+#
+# Window size: 28 residues
+#
+#=======================================
+
+Max_coil_pos at "*"
+
+(1) Score 0.827 length 561 at residues 1->561
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       *
+ Sequence: gttcgatgcctaaaataccttcttttgtccctacacagaccacagttttcctaatggctttacaccgactagaaattcttgtgcaagcactaattgaaagcggttggcctagagtgttaccggtttgtatagctgagcgcgtctcttgccctgatcaaaggttcattttctctactttggaagacgttgtggaagaatacaacaagtacgagtctctcccccctggtttgctgattactggatacagttgtaatacccttcgcaacaccgcgtaactatctatatgaattattttccctttattatatgtagtaggttcgtctttaatcttcctttagcaagtcttttactgttttcgacctcaatgttcatgttcttaggttgttttggataatatgcggtcagtttaatcttcgttgtttcttcttaaaatatttattcatggtttaatttttggtttgtacttgttcaggggccagttcattatttactctgtttgtatacagcagttcttttatttttagtatgattttaatttaaaacaattctaatggtcaaaaa
+           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+           1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               561
+ Probability: 0.000
+ Max_coil_pos: 525
 
 
-Other structures from 1 to 561 (561 residues)
-   Max score: 0.827 (probability 0.00)
+#---------------------------------------
+#---------------------------------------

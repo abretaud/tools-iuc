@@ -1,4 +1,4 @@
-<tool id="EMBOSS: dotmatcher24" name="dotmatcher" version="@VERSION@.1">
+<tool id="emboss_dotmatcher" name="dotmatcher" version="@VERSION@">
   <description>Displays a thresholded dotplot of two sequences</description>
   <macros>
     <import>macros.xml</import>

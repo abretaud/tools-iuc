@@ -1,4 +1,4 @@
-<tool id="EMBOSS: charge8" name="charge" version="@VERSION@.1">
+<tool id="emboss_charge" name="charge" version="@VERSION@">
   <description>Protein charge plot</description>
   <macros>
     <import>macros.xml</import>

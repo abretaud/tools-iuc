@@ -1,4 +1,4 @@
-<tool id="EMBOSS: octanol63" name="octanol" version="@VERSION@.1">
+<tool id="emboss_octanol" name="octanol" version="@VERSION@">
   <!-- graphics output with filename, no functional tests added -->
   <description>Displays protein hydropathy</description>
   <macros>

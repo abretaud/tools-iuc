@@ -1,4 +1,4 @@
-<tool id="EMBOSS: dreg27" name="dreg" version="@VERSION@">
+<tool id="emboss_dreg" name="dreg" version="@VERSION@">
   <description>Regular expression search of a nucleotide sequence</description>
   <macros>
     <import>macros.xml</import>

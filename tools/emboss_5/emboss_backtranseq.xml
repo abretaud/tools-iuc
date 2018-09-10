@@ -1,4 +1,4 @@
-<tool id="EMBOSS: backtranseq2" name="backtranseq" version="@VERSION@">
+<tool id="emboss_backtranseq" name="backtranseq" version="@VERSION@">
   <description>Back translate a protein sequence</description>
   <macros>
     <import>macros.xml</import>
