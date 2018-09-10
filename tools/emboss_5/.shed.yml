@@ -1,7 +1,7 @@
 categories:
 - Sequence Analysis
 - Fasta Manipulation
-description: Galaxy wrappers for EMBOSS version 5.0.0 tools
+description: Galaxy wrappers for EMBOSS version 6.6.0 tools
 homepage_url: http://emboss.open-bio.org/
 long_description: |
     The European Molecular Biology Open Software Suite (EMBOSS) is a high quality, well documented package of open source software tools for molecular biology. It includes over 200 applications for molecular sequence analysis and other common tasks in bioinformatics.
@@ -9,3 +9,9 @@ name: emboss_5
 owner: devteam
 remote_repository_url: https://github.com/galaxyproject/tools-iuc/tree/master/tools/emboss_5
 type: unrestricted
+auto_tool_repositories:
+  name_template: "{{ tool_id }}"
+  description_template: "{{ tool_name }} (from the EMBOSS tool suite)"
+suite:
+  name: "suite_emboss"
+  description: EMBOSS is a high quality, well documented package of open source software tools for molecular biology.
